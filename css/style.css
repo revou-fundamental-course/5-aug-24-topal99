@@ -4,9 +4,16 @@
 
 }
 
-.jenis-kelamin {
-
+form {
+    padding: 15px;
     display: flex;
     flex-direction: column;
     background-color: gainsboro;
+}
+
+aside{
+    float: left;
+    width: 50%;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
 }
