@@ -7,13 +7,13 @@
     <title>Kalkulator BMI</title>
 </head>
 <body>
-   <header style="padding-left: 15px;">
-    <h1>Kalkulator BMI</h1>
-   </header>
    
    <main>
     <aside>
         <article>
+            <header>
+                <h1>Kalkulator BMI</h1>
+            </header>
             <p>
                 Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana dengamu? Yuk,
                 hitung sekarang di kalkulator BMI.
@@ -22,27 +22,23 @@
         
         <form>
             <div>
-                <h2>Jenis Kelamin</h2>
+                <h3>Jenis Kelamin</h3>
                 <input type="radio" id="pria" name="jenis-kelamin">
                 <label for="pria">Pria</label>
                 <input type="radio" id="wanita" name="jenis-kelamin">
                 <label for="wanita">Wanita</label>
             </div>
             <div>
-                <h2>Berat Badan (kg)</h2>
+                <h3>Berat Badan (kg)</h3>
                 <input type="number" id="berat-badan" name="berat-badan" />
-            </div>
-            <div>
-                <h2>Usia (tahun)</h2>
+                <h3>Usia (tahun)</h3>
                 <input type="number" id="usia" name="usia" />
-            </div>
-            <div>
-                <h2>Tinggi Badan (cm)</h2>
+                <h3>Tinggi Badan (cm)</h3>
                 <input type="number" id="tinggi-badan" name="tinggi-badan" />
             </div>
             <div>
-                <button type="submit">Hitung BMI</button>
-                <button type="reset">Reset</button>
+                <button  class="btn-konsultasi" type="submit">Hitung BMI</button>
+                <button  class="btn-konsultasi" type="reset">Reset</button>
             </div>
         </form>
         
@@ -66,13 +62,58 @@
             </p>
         </article>
     </aside>
-    <section>
-        Salamanders are a group of amphibians with a lizard-like appearance, including short legs and a tail in both larval
-        and adult forms.
-    </section>
+    <aside>
+        <section>
+            <header>
+                <h1>
+                Hasil
+                </h1>
+        </section>
+        <section>
+            <form>
+                <h2 style="text-align: center;">
+                    Berat badan Lebih
+                </h2>
+                    <button type="submit" class="btn-download" onclick="download()">Download hasil BMI</button>
+            </form>
+        </section>
+        <section>
+            <p>
+                Hasil BMI diantara 23 dan 25
+            </p>
+            <p>Anda berada dalam kategori overweight atau berat badan berlebih.</p>
+            <p>Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalori makanan yang dikonsumsi.</p>
+            <p>Jika BMI Anda berada dalam kategori ini Anda disarankan untuk menurunkan berat badan hingga batas normal.</p>
+        </section>
+            <button type="submit" class="btn-konsultasi" onclick="download()">Konsultasi Ahli Gizi Via Aplikasi</button>
+            <button type="submit" class="btn-konsultasi" onclick="download()">Registrasi Online Ahli Gizi</button>
+        <p>
+            BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.
+        </p>
+        <section>
+            <form>
+                <h2 style="text-align: center;">Beberapa penyakit yang berasal dari kegemukan</h2>
+                <ul class="penyakit">
+                    <li>Diabetes</li>
+                    <li>Hipertensi</li>
+                    <li>Sakit Jantung</li>
+                    <li>Osteoarthritis</li>
+                </ul>
+                <p></p>
+                <div style="padding-left: 17%;">
+                    <button type="submit" class="btn-download" onclick="download()">Konsultasi Dokter Via Aplikasi</button>
+                    <button type="submit" class="btn-download" onclick="download()">Registrasi Online Sekarang</button>
+                </div>
+            </form>
+        </section>
+        <section>
+            <h2 style="text-align: center;">
+                Download Aplikasi
+            </h2>
+        </section>
+    </aside>
     </main>
     <footer>
-
     </footer>
 
 </body>
