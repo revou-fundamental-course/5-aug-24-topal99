@@ -44,7 +44,7 @@ div{
 
 .btn-reset{
     background-color: rgb(255, 255, 255);
-    border: 3px;
+    border: none;
     padding: 10px;
     border-radius: 5px;
 }
@@ -80,10 +80,14 @@ h4{
 
 .input{
     width: 98%;
-    height: 20px;
+    height: 25px;
 }
 
 img{
     width: 25%;
 }
 
+input[type="number"] {
+    border-radius: 5px;
+    border-width: thin;
+}
